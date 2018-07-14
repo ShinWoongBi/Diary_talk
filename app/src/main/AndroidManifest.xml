@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.warbargic.diary_talk">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Diary.see_diary"/>
+        <activity android:name=".Chat.Set_name"/>
+        <activity android:name=".Diary.monitor"/>
+        <activity android:name=".Login.Register"/>
+        <activity android:name=".Chat.Live_location"/>
+        <activity android:name=".Chat.Chatting_room"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Friend.friend_profile"/>
+        <activity android:name=".set"/>
+        <activity android:name=".Friend.set_message"/>
+        <activity android:name=".Friend.set_name"/>
+        <activity android:name=".Friend.AddFriend"/>
+        <activity android:name=".Friend.AddFriend_profile"/>
+        <activity android:name=".main_menu"
+            android:windowSoftInputMode="adjustNothing"/>
+        <activity android:name=".Friend.my_profile"/>
+        <activity android:name=".Friend.BigImage"/>
+        <activity android:name=".Friend.my_profile_edit"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".Chat.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service android:name=".Diary.service">
+            <intent-filter>
+                <action android:name="start_service"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+</manifest>

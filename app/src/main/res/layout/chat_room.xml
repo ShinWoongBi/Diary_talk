@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dl_activity_main_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#B69DFF">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00FF0000"
+                    android:id="@+id/chat_room_top_name"/>
+
+            </LinearLayout>
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="9"
+                android:id="@+id/chat_room_list"
+                android:divider="#00FF0000"
+                android:dividerHeight="6dp"></ListView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#F0F0F0"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <!--<ImageButton-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:id="@+id/chat_room_live_location_btn"-->
+                    <!--android:background="#00FF0000"-->
+                    <!--android:src="@drawable/room_map"-->
+                    <!--android:scaleType="fitCenter"-->
+                    <!--android:layout_marginRight="2dp"/>-->
+
+                <EditText
+                    android:id="@+id/chat_room_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="7"
+                    android:background="#fff" />
+
+                <Button
+                    android:id="@+id/chat_room_btn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#00FF0000"
+                    android:text="전송"
+                    android:textColor="#CCCCCC"
+                    android:textSize="17dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="20"
+        android:id="@+id/lv_activity_main_nav_list"
+        android:layout_gravity="right"
+        android:foregroundGravity="center"
+        android:choiceMode="singleChoice"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:background="#BABABA">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:onClick="chat_room_onclick"
+                android:src="@drawable/room_map"
+                android:scaleType="fitCenter"
+                android:background="#00FF0000"
+                android:id="@+id/Live_location"/>
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:layout_height="wrap_content"
+                android:background="#00FF0000"
+                android:src="@drawable/write"
+                android:id="@+id/monitor"
+                android:onClick="chat_room_onclick"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#EDEDED"
+            android:layout_weight="0.3"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="대화 상대" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="14.7"
+            android:orientation="vertical">
+
+
+            <ListView
+                android:layout_width="240dp"
+                android:layout_height="match_parent"
+                android:id="@+id/friend_list"
+                android:layout_gravity="right"
+                android:foregroundGravity="center"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:background="#EDEDED"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.v4.widget.DrawerLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/chat_room_listitem_linear"
+    android:gravity="right"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="#00FF0000"
+        android:scaleType="fitCenter"
+        android:id="@+id/chat_room_listitem_imagebutton"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chat_room_listitem_name"
+            android:textSize="15dp"
+            android:textColor="#000"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/chat_room_listitem_text"
+            android:paddingLeft="10dp"
+            android:textColor="#000"
+            android:text="aasdfasdfsdf"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:gravity="bottom"
+            android:id="@+id/chat_room_listitem_time"
+            android:textColor="#000"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:text="오후 10:32"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

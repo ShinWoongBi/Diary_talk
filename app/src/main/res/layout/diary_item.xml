@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/friend_main_item_linear"
+    android:layout_height="70dp"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="match_parent"
+        android:scaleType="fitCenter"
+        android:padding="10dp"
+        android:foregroundGravity="center"
+        android:id="@+id/diary_main_item_image"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:textSize="15dp"
+        android:ellipsize="end"
+        android:text="name"
+        android:textColor="#000"
+        android:id="@+id/diary_main_item_name"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:gravity="center|right"
+        android:paddingRight="10dp"
+        android:layout_weight="5"
+        android:ellipsize="end"
+        android:textColor="#000"
+        android:id="@+id/diary_main_item_message"/>
+
+</LinearLayout>

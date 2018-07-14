@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:background="#A08AE0">
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="MAIL 검색"
+        android:textSize="20dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="상대방의 메일주소를 입력해주세요"
+        android:background="#fff"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:maxLength="60"
+        android:text=""
+        android:id="@+id/friend_addfriend_edit"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="찾기"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+
+        android:textColor="#fff"
+        android:background="#B69DFF"
+        android:id="@+id/friend_addfriend_btn"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/friend_main_item_linear"
+        android:background="#fff"
+        android:visibility="invisible"
+        android:weightSum="10">
+
+        <ImageView
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:foregroundGravity="center"
+            android:id="@+id/friend_main_item_image"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:text="name"
+            android:ellipsize="end"
+            android:textColor="#000"
+            android:id="@+id/friend_main_item_name"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center|right"
+            android:paddingRight="10dp"
+            android:ellipsize="end"
+            android:textColor="#000"
+            android:id="@+id/friend_main_item_message"/>
+
+    </LinearLayout>
+
+</LinearLayout>

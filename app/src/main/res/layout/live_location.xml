@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="bottom|right">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="상대 위치"
+            android:background="#5360FF"
+            android:textColor="#fff"
+            android:id="@+id/live_location_youposition_btn"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="자신위치"
+            android:textColor="#fff"
+            android:background="#CF4F45"
+            android:id="@+id/live_location_myposition_btn"
+            android:layout_gravity="bottom|right"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/live_location_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/live_location_kind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="위도"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/live_location_lat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="경도"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/live_location_lon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="정확도" />
+
+        <TextView
+            android:id="@+id/live_location_accuracy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ToggleButton
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="위치정보수신시작"
+            android:textOn="위치정보수신종료" />
+    </LinearLayout>
+
+
+</FrameLayout>
