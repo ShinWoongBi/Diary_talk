@@ -79,7 +79,7 @@ public class Live_location extends Activity implements MapView.MapViewEventListe
         mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(37.4020737, 127.1086766), true);
 
 
-        verifyStoragePermissions(this);
+//        verifyStoragePermissions(this);
         lat_T = (TextView) findViewById(R.id.live_location_lat);
         lon_T = (TextView) findViewById(R.id.live_location_lon);
 
